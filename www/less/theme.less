@@ -1,10 +1,11 @@
-﻿@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "./chroma.less";
+@import "./type.less";
 
-@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-size-h1: floor((@font-size-base * 2.4)); // ~36px
 @headings-font-weight: 300;
 @font-size-base: 15px;
-@brand-primary: #01A4EF;
 @footer-height: 247px;
 
 /* Page layout */
@@ -23,17 +24,17 @@ body, html {
     font-size: @font-size-h4;
 
     .navbar-brand {
-        @logo-height: 42px;
+        @logo-height: 48px;
 
         padding: ((@navbar-height - @logo-height) / 2) 0;
 
         i {
             background-image: url('../content/logo.png');
-            background-size: 277px 42px;
+            background-size: 316px 48px;
             display: inline-block;
             vertical-align: middle;
             height: @logo-height;
-            width: 277px;
+            width: 316px;
             margin-left: @navbar-padding-horizontal;
         }
     }

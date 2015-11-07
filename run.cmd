@@ -1,1 +1,1 @@
-http-server www -p 8090 -a 127.0.0.1 -o
+pm2 start http-server --name wallet -- www -p 8090 -d false
