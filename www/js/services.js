@@ -17,7 +17,7 @@ var bitcore = require("bitcore");
 var ByteBuffer = dcodeIO.ByteBuffer;
 var Long = dcodeIO.Long;
 
-module.service("apiService", function ($http, encodingService, LedgerRecord) {
+module.service("apiService", function ($http, encodingService, protobufBuilder, LedgerRecord) {
 
     this.postTransaction = function (endpoint, encodedTransaction, key) {
         
@@ -43,12 +43,21 @@ module.service("apiService", function ($http, encodingService, LedgerRecord) {
             });
     }
 
-    this.getValue = function (endpoint, key) {
-        return $http({
-            url: endpoint.rootUrl + "record",
-            method: "GET",
-            params: { key: key.toHex() }
-        }).then(function (result) {
+    this.getValue = function (endpoint, key, version) {
+        if (version)
+            var request = $http({
+                url: endpoint.rootUrl + "query/recordversion",
+                method: "GET",
+                params: { key: key.toHex(), version: version.toHex() }
+            });
+        else
+            var request = $http({
+                url: endpoint.rootUrl + "record",
+                method: "GET",
+                params: { key: key.toHex() }
+            });
+
+        return request.then(function (result) {
             return {
                 key: key,
                 value: ByteBuffer.fromHex(result.data.value),
@@ -57,8 +66,8 @@ module.service("apiService", function ($http, encodingService, LedgerRecord) {
         });
     }
 
-    this.getAccount = function (endpoint, account, asset) {
-        return this.getValue(endpoint, encodingService.encodeAccount(account, asset)).then(function (result) {
+    this.getAccount = function (endpoint, account, asset, version) {
+        return this.getValue(endpoint, encodingService.encodeAccount(account, asset), version).then(function (result) {
             var accountResult = {
                 key: result.key,
                 account: account,
@@ -113,6 +122,42 @@ module.service("apiService", function ($http, encodingService, LedgerRecord) {
                     balance: Long.fromString(item.balance)
                 };
             });
+        });
+    }
+
+    this.getRecordTransactions = function (endpoint, key) {
+        return $http({
+            url: endpoint.rootUrl + "query/recordmutations",
+            method: "GET",
+            params: { key: key }
+        }).then(function (result) {
+            return result.data;
+        });
+    }
+
+    this.getTransaction = function (endpoint, mutationHash) {
+        return $http({
+            url: endpoint.rootUrl + "query/transaction",
+            method: "GET",
+            params: { mutation_hash: mutationHash }
+        }).then(function (result) {
+            var buffer = ByteBuffer.fromHex(result.data.raw);
+            var transaction = protobufBuilder.Transaction.decode(buffer.clone());
+            var mutation = protobufBuilder.Mutation.decode(transaction.mutation.clone());
+
+            var transactionBuffer = new Uint8Array(buffer.toArrayBuffer());
+            var transactionHash = bitcore.crypto.Hash.sha256(bitcore.crypto.Hash.sha256(transactionBuffer));
+            var mutationBuffer = new Uint8Array(transaction.mutation.toArrayBuffer());
+            var mutationHash = bitcore.crypto.Hash.sha256(bitcore.crypto.Hash.sha256(mutationBuffer));
+
+            return {
+                transaction: transaction,
+                mutation: mutation,
+                mutationHash: ByteBuffer.wrap(mutationHash),
+                transactionHash: ByteBuffer.wrap(transactionHash)
+            };
+        }, function (result) {
+            return null;
         });
     }
 
