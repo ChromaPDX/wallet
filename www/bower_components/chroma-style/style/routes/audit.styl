@@ -1,0 +1,25 @@
+@require '../lib/custom.bootstrap.import.styl'
+
+// this should go in baskts is it won't work. :shrug:
+
+#baskets-page
+  .basket-preview .panel-body img
+    max-height 25rem
+    object-fit cover
+
+#audit-page
+  .active i.fa.fa-folder-open
+    display: inline-block
+  .inactive i.fa.fa-folder-open
+    display: none
+
+  .active i.fa.fa-folder
+    display: none
+  .inactive i.fa.fa-folder
+    display: inline-block
+
+  ul li ul
+    display none !important
+
+  ul
+    list-style-type none

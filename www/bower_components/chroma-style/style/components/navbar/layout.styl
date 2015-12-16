@@ -1,0 +1,56 @@
+@require '../../lib/custom.bootstrap.import.styl'
+
+nav.navbar
+  .container, .container-fluid
+    padding-top 0px
+    padding-bottom 0px
+
+  margin-bottom 0px
+
+  .navbar-brand
+    padding-top 14px !important
+    padding-left 22px
+
+    > img
+      max-height 50px
+
+  .nav-label
+    padding-top 30px !important
+
+  a.dropdown-toggle
+    > img
+      max-height 50px
+
+  a.dropdown-toggle.hasImage
+    padding-top 16px
+    padding-bottom 0px
+
+  @media screen and (min-width: $screen-sm)
+    .navbar-right li a
+      text-align center
+
+@media screen and (max-width: $screen-sm )
+  nav.navbar
+    min-height 60px
+    height 60px
+
+    .navbar-right li a
+      text-align right
+
+    a.dropdown-toggle
+      display none !important
+
+    .dropdown-menu > li > a
+      padding 17px !important
+
+    #login-dropdown-list .dropdown-menu
+      min-width 250px !important
+
+    .mobile-brand
+      padding-top 8px
+      text-align center
+      width 100%
+      > a
+        > img
+          height 44px !important
+          max-width: 66vw

@@ -22,9 +22,10 @@
     "angular-route": "~1.4.7",
     "protobuf": "dcodeIO/ProtoBuf.js#~4.0.0",
     "bootstrap": "~3.3.5",
-    "less": "~2.5.3",
+    "stylus": "0.53.0",
     "components-font-awesome": "~4.3.0",
     "angular-tree-control": "wix/angular-tree-control#~0.2.15",
-    "moment": "~2.10.6"
+    "moment": "~2.10.6",
+    "chroma-style": "git@github.com:ChromaPDX/chroma-style.git"
   }
 }

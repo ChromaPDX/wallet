@@ -1,0 +1,13 @@
+{
+  "name": "chroma-style",
+  "homepage": "https://github.com/ChromaPDX/chroma-style",
+  "_release": "f0e69a45f9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f0e69a45f927120c53b12c28ad77457c04b75aa0"
+  },
+  "_source": "git@github.com:ChromaPDX/chroma-style.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:ChromaPDX/chroma-style.git"
+}

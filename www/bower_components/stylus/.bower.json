@@ -1,0 +1,14 @@
+{
+  "name": "stylus",
+  "homepage": "https://github.com/stylus/stylus",
+  "version": "0.53.0",
+  "_release": "0.53.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.53.0",
+    "commit": "a0b7cc61feb8abf361a1660710f8f96aa8aba309"
+  },
+  "_source": "git://github.com/stylus/stylus.git",
+  "_target": "0.53.0",
+  "_originalSource": "stylus"
+}
