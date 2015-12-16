@@ -1,0 +1,107 @@
+@import url("//fonts.googleapis.com/css?family=Raleway:400,700");
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+@font-face {
+  font-family: 'brandon';
+  src: url("/packages/chroma_style/fonts/Brandon_reg.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gotham';
+  src: url("/packages/chroma_style/fonts/Gotham-Bold.ttf") format("truetype");
+}
+nav.navbar {
+  margin-bottom: 0px;
+}
+nav.navbar .container,
+nav.navbar .container-fluid {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+nav.navbar .navbar-brand {
+  padding-top: 14px !important;
+  padding-left: 22px;
+}
+nav.navbar .navbar-brand img {
+  max-height: 50px;
+}
+nav.navbar .nav-label {
+  padding-top: 30px !important;
+}
+nav.navbar a.dropdown-toggle > img {
+  max-height: 50px;
+}
+nav.navbar a.dropdown-toggle.hasImage {
+  padding-top: 16px;
+  padding-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  nav.navbar .navbar-right li a {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav.navbar {
+    min-height: 60px;
+    height: 60px;
+  }
+  nav.navbar .navbar-right li a {
+    text-align: right;
+  }
+  nav.navbar a.dropdown-toggle {
+    display: none !important;
+  }
+  nav.navbar .dropdown-menu > li > a {
+    padding: 17px !important;
+  }
+  nav.navbar #login-dropdown-list .dropdown-menu {
+    min-width: 250px !important;
+  }
+  nav.navbar .mobile-brand {
+    padding-top: 8px;
+    text-align: center;
+    width: 100%;
+  }
+  nav.navbar .mobile-brand > a > img {
+    height: 44px !important;
+    max-width: 66vw;
+  }
+}

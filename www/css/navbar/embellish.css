@@ -1,0 +1,54 @@
+@import url("//fonts.googleapis.com/css?family=Raleway:400,700");
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+@font-face {
+  font-family: 'brandon';
+  src: url("/packages/chroma_style/fonts/Brandon_reg.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gotham';
+  src: url("/packages/chroma_style/fonts/Gotham-Bold.ttf") format("truetype");
+}
+nav {
+  border-image: linear-gradient(to right, #b8008e, #ff0085, #fa0021, #ffb900, #fcf900, #b5e022, #00b0bc, #00adf3, #0080c9) 5 stretch !important;
+  border-bottom-width: 1px !important;
+}

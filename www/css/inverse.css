@@ -1,0 +1,127 @@
+/*
+Copyright (C) Chroma.fund - All Rights Reserved
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential
+Adam Wong <adamwong246@gmail.com>, 2015
+*/
+@import url("//fonts.googleapis.com/css?family=Raleway:400,700");
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+@font-face {
+  font-family: 'brandon';
+  src: url("/packages/chroma_style/fonts/Brandon_reg.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gotham';
+  src: url("/packages/chroma_style/fonts/Gotham-Bold.ttf") format("truetype");
+}
+.inverse {
+  background-color: #eee;
+  color: #575c63;
+}
+.inverse a,
+.inverse a:link,
+.inverse a:visited {
+  color: #ff0085;
+}
+.inverse a.button,
+.inverse a:link.button,
+.inverse a:visited.button,
+.inverse a.btn,
+.inverse a:link.btn,
+.inverse a:visited.btn {
+  color: #eee;
+}
+.inverse a:hover {
+  color: #ff0085;
+}
+.inverse a:hover.button,
+.inverse a:hover.btn {
+  color: #eee;
+}
+.inverse h1,
+.inverse h2,
+.inverse h3,
+.inverse h4,
+.inverse h5 {
+  color: #2e3336 !important;
+}
+.inverse h1 .small,
+.inverse h2 .small,
+.inverse h3 .small,
+.inverse h4 .small,
+.inverse h5 .small {
+  color: #2e3336 !important;
+}
+.inverse hr {
+  border-color: $chroma-p-font-color;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+.inverse input.form-control,
+.inverse select.form-control {
+  background-color: #eee;
+  color: #575c63 !important;
+}
+.inverse textarea.form-control {
+  background-color: #eee;
+  color: #575c63 !important;
+}
+.inverse .input-group-addon {
+  background-color: #eee;
+  color: #575c63 !important;
+}
+.inverse .btn.btn-chroma,
+.inverse .btn.btn-primary {
+  background: linear-gradient(to right, #0080c9, #00adf3) !important;
+}
+.inverse .well {
+  background: linear-gradient(to bottom, rgba(175,175,175,0.6), rgba(150,150,150,0.4)) !important;
+  border: none;
+}
+.inverse .well.bg-gray {
+  background: linear-gradient(to bottom, rgba(175,175,175,0.6), rgba(150,150,150,0.4)) !important;
+}
+.inverse button.cancel-link {
+  color: #333;
+}

@@ -38,7 +38,13 @@
   <script src="js/controllers/transaction.js"></script>
   <script src="js/controllers/signin.js"></script>
 
-  <link rel="stylesheet" href="css/custom.bootstrap.css" />
+  <link rel="stylesheet" href="css/lib/custom.bootstrap.css" />
+
+  <link rel="stylesheet" href="css/type.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/inverse.css" />
+  <link rel="stylesheet" href="css/navbar/layout.css" />
+  <link rel="stylesheet" href="css/navbar/embellish.css" />
 
   <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="bower_components/angular-tree-control/css/tree-control.css" />
@@ -58,7 +64,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/"><i></i></a>
+          <a class="navbar-brand" href="#/">
+            <img src="https://local-chroma-fund-or-files.s3.amazonaws.com/static/nav/chromafund_logo_white_text.png">
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -81,7 +89,7 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid inverse">
       <ng-view></ng-view>
 
       <div class="footer-push"></div>
@@ -112,8 +120,8 @@
         </div>
 
         <div class="row">
-          <div class="col-md-12 footer-copyright">
-            <p class="text-center">&copy; IMPORTANT DISCLOSURES: Chroma.fund is a website operated by Chroma Games, Inc. By accessing this site and any pages thereof, you agree to be bound by its Terms of Use and Privacy Policy. Chroma does not make investment recommendations. No communication, through this website or in any other medium, should be construed as a recommendation for any security offering on or off this investment platform. Project listings on this Site are only suitable for those willing to accept the high risk associated with private investments. Securities sold through private placements are not publicly traded and are intended for investors who do not have a need for a liquid investment. There can be no assurance the valuation is accurate or in agreement with the market or industry valuations. Investing in private placements requires high risk tolerance, low liquidity concerns, and long-term commitments. Investors must be able to afford to lose their entire investment. 2015 - Chroma.fund</p>
+          <div class="col-xs-12 footer-copyright">
+            <p class="legal text-center">&copy; IMPORTANT DISCLOSURES: Chroma.fund is a website operated by Chroma Games, Inc. By accessing this site and any pages thereof, you agree to be bound by its Terms of Use and Privacy Policy. Chroma does not make investment recommendations. No communication, through this website or in any other medium, should be construed as a recommendation for any security offering on or off this investment platform. Project listings on this Site are only suitable for those willing to accept the high risk associated with private investments. Securities sold through private placements are not publicly traded and are intended for investors who do not have a need for a liquid investment. There can be no assurance the valuation is accurate or in agreement with the market or industry valuations. Investing in private placements requires high risk tolerance, low liquidity concerns, and long-term commitments. Investors must be able to afford to lose their entire investment. 2015 - Chroma.fund</p>
           </div>
         </div>
       </div>
