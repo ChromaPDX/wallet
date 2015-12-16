@@ -2,6 +2,9 @@
 
 This repository contains the source code of the Openchain reference wallet. The wallet is available at [wallet.openchain.org](https://wallet.openchain.org/).
 
+## Quickstart
+```sh buildAndRun.sh```
+
 ## License
 
 Copyright 2015 Coinprism, Inc.
