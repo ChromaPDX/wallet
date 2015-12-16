@@ -1,0 +1,3 @@
+[submodule "www/bower_components/chroma-style"]
+	path = www/bower_components/chroma-style
+	url = git@github.com:ChromaPDX/chroma-style.git

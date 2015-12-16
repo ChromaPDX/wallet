@@ -60,7 +60,7 @@ nav.navbar .navbar-brand {
   padding-top: 14px !important;
   padding-left: 22px;
 }
-nav.navbar .navbar-brand img {
+nav.navbar .navbar-brand > img {
   max-height: 50px;
 }
 nav.navbar .nav-label {
