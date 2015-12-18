@@ -162,6 +162,11 @@ footer .footer-copyright p {
   width: 105px;
 }
 /* Tree explorer */
+
+treecontrol {
+ color: white !important;
+}
+
 .tree-explorer {
   overflow-x: auto;
   padding-bottom: 50px;
