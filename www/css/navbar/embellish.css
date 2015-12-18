@@ -52,3 +52,6 @@ nav {
   border-image: linear-gradient(to right, #b8008e, #ff0085, #fa0021, #ffb900, #fcf900, #b5e022, #00b0bc, #00adf3, #0080c9) 5 stretch !important;
   border-bottom-width: 1px !important;
 }
+.navbar-collapse {
+  background-color: #002126;
+}

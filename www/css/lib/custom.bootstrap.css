@@ -5306,13 +5306,13 @@ a.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 20px;
-  background-color: #2e3336;
+  background-color: #777;
   border: 1px solid transparent;
   border-radius: 0px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 .panel-body {
-  padding: 0px;
+  padding: 15px;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5378,8 +5378,8 @@ a.list-group-item-danger.active:focus {
 .panel > .table caption,
 .panel > .table-responsive > .table caption,
 .panel > .panel-collapse > .table caption {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {

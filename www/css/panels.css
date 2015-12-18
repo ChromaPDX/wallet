@@ -1,0 +1,101 @@
+@import url("//fonts.googleapis.com/css?family=Raleway:400,700");
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+@font-face {
+  font-family: 'brandon';
+  src: url("/packages/chroma_style/fonts/Brandon_reg.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gotham';
+  src: url("/packages/chroma_style/fonts/Gotham-Bold.ttf") format("truetype");
+}
+.panel {
+  border: none !important;
+}
+.panel > .panel-heading {
+  background-color: #002126 !important;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 8px;
+}
+.panel .panel-overlay-chroma {
+  color: #eee;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.panel .panel-body:hover .panel-overlay-chroma {
+  visibility: visible;
+  opacity: 1;
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.panel.panel-danger > .panel-heading {
+  border-image: linear-gradient(to right, rgba(250,0,33,0.5), rgba(255,0,133,0.5)) 5 stretch !important;
+}
+.panel.panel-danger .panel-overlay-chroma {
+  background: linear-gradient(to right, rgba(250,0,33,0.5), rgba(255,0,133,0.5));
+}
+.panel.panel-warning > .panel-heading {
+  border-image: linear-gradient(to right, rgba(252,249,0,0.5), rgba(255,185,0,0.5)) 5 stretch !important;
+}
+.panel.panel-warning .panel-overlay-chroma {
+  background: linear-gradient(to right, rgba(255,185,0,0), rgba(255,185,0,0.1), rgba(255,185,0,0.5), rgba(255,185,0,0.8));
+}
+.panel.panel-info > .panel-heading {
+  border-image: linear-gradient(to right, rgba(0,128,201,0.5), rgba(0,173,243,0.5)) 5 stretch !important;
+}
+.panel.panel-info .panel-overlay-chroma {
+  background: linear-gradient(to right, rgba(0,128,201,0), rgba(0,128,201,0.1), rgba(0,128,201,0.5), rgba(0,173,243,0.8));
+}
+.panel .panel-footer {
+  background-color: #002126;
+}
+.panel.admin {
+  background-color: #9c5e66;
+}
+.panel.admin > .panel-heading {
+  background-color: #9c5e66;
+}

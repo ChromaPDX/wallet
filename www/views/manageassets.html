@@ -21,8 +21,8 @@
               <label class="control-label" for="assetPath">Endpoint</label>
               <div class="input-group fullsize-dropdown">
                 <div class="dropdown">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    <b class="caret"></b>
+                  <button type="button" class="btn btn-default dropdown-toggle text-left" data-toggle="dropdown">
+                    <b class="caret pull-right"></b>
                     <span>{{ endpoint.properties.name }}</span>
                     <span ng-show="endpoint && !endpoint.properties.name">({{ endpoint.rootUrl }})</span>
                     <span ng-hide="endpoint">Select an Endpoint...</span>
@@ -78,7 +78,7 @@
     </form>
 
     <div id="accordion" role="tablist" aria-multiselectable="true" ng-show="mode == 'show-form'">
-      
+
       <!-- Edit asset definition -->
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
