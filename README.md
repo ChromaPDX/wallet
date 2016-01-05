@@ -1,6 +1,6 @@
-# Openchain Wallet
+# ChromaCoin Wallet
 
-This repository contains the source code of the Openchain reference wallet. The wallet is available at [wallet.openchain.org](https://wallet.openchain.org/).
+This repository contains the source code of the ChromaCoin reference wallet. The wallet is available at [https://github.com/ChromaPDX/wallet](https://github.com/ChromaPDX/wallet). It is hosted at [http://wallet.chroma.fund/#/addendpoint](http://wallet.chroma.fund/#/addendpoint)
 
 ## Quickstart
 ```sh buildAndRun.sh```

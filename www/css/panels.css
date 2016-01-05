@@ -51,6 +51,9 @@
 .panel {
   border: none !important;
 }
+.panel a {
+  color: #222;
+}
 .panel > .panel-heading {
   background-color: #002126 !important;
   border-top: 0px;

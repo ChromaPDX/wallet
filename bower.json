@@ -1,12 +1,13 @@
 {
-  "name": "OpenchainWallet",
+  "name": "ChromaCoin",
   "version": "0.2.2",
   "authors": [
-    "Flavien Charlon <flavien@charlon.net>"
+    "Flavien Charlon <flavien@charlon.net>",
+    "Adam Wong <adam@chroma.io>"
   ],
   "main": "www/index.html",
   "license": "Apache License Version 2.0",
-  "homepage": "https://github.com/openchain/wallet",
+  "homepage": "https://github.com/ChromaPDX/wallet",
   "ignore": [
     "**/.*",
     "node_modules",

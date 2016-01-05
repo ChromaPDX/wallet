@@ -206,3 +206,7 @@ treecontrol {
 .data-record-block {
   margin-bottom: 50px;
 }
+
+.section-header {
+  background: rgb(0,33,38);
+}
