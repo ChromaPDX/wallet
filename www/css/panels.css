@@ -51,7 +51,7 @@
 .panel {
   border: none !important;
 }
-.panel a {
+.panel .panel-body > a {
   color: #222;
 }
 .panel > .panel-heading {
